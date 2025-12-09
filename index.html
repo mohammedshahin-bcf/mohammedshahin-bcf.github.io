@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mohammed Shahin Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+ <!-- ===== Navbar Start ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <h2>MOHAMMED <span>SHAHIN</span></h2>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#services">My Services</a>
+	  <a href="#projects">My Projects</a>
+      <a href="https://ajkersylhet.com/news-details?nid=12898">My News</a>
+	  <!-- <a href="#contact">Contact Me</a> -->
+    </nav>
+
+    <a href="#contact" class="btn hire-btn">Hire Me</a>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </div>
+</header>
+<!-- ===== Navbar End ===== -->
+
+<!-- ===== Navbar CSS ===== -->
+<style>
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(249, 178, 51, 0.2);
+  padding: 15px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-logo span {
+  color: #f9b233;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f9b233;
+}
+
+.btn.hire-btn {
+  background: #f9b233;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.hire-btn:hover {
+  background: #fff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #f9b233;
+  cursor: pointer;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid rgba(249, 178, 51, 0.3);
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .btn.hire-btn {
+    display: none;
+  }
+}
+</style>
+
+<!-- ===== Navbar Toggle JS ===== -->
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
+
+	  <!-- ===== Hero Section Start ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>Hello, I'm</h2>
+      <h1>MOHAMMED <span>SHAHIN</span></h1>
+      <h3>
+        <span class="typing"></span>
+      </h3>
+      <p>
+        Passionate about securing the digital world through defense, recovery, and research.
+        I help individuals and organizations regain control of their online presence and
+        strengthen their cybersecurity resilience.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="https://facebook.com/mohammedshahin.bcf" class="btn secondary">Facebook</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/mohammedshahin01.jpg" alt="Mohammed Shahin">
+    </div>
+  </div>
+</section>
+<!-- ===== Hero Section End ===== -->
+
+<!-- ===== CSS Styling ===== -->
+<style>
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d0d0d, #111);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #f9b233;
+}
+
+.hero-text h3 {
+  font-size: 1.3rem;
+  color: #f9b233;
+  margin-bottom: 25px;
+  height: 30px;
+}
+
+.hero-text p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #f9b233;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn.secondary {
+  border: 2px solid #f9b233;
+  color: #f9b233;
+}
+
+.btn.secondary:hover {
+  background: #f9b233;
+  color: #000;
+}
+
+.hero-image {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f9b233;
+  box-shadow: 0 0 25px rgba(249, 178, 51, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-text {
+    margin-top: 40px;
+  }
+}
+</style>
+
+<!-- ===== Typing Animation (Profession Rotator) ===== -->
+<script>
+const professions = [
+  "Defensive Security Researcher",
+  "Social Media Recovery Specialist",
+  "Cyber Threat Analyst",
+  "Digital Forensics Enthusiast"
+];
+
+let i = 0;
+let j = 0;
+let currentProfession = "";
+let isDeleting = false;
+const typingElement = document.querySelector(".typing");
+
+function typeEffect() {
+  if (i < professions.length) {
+    if (!isDeleting && j <= professions[i].length) {
+      currentProfession = professions[i].substring(0, j++);
+      typingElement.textContent = currentProfession;
+      setTimeout(typeEffect, 100);
+    } else if (isDeleting && j > 0) {
+      currentProfession = professions[i].substring(0, j--);
+      typingElement.textContent = currentProfession;
+      setTimeout(typeEffect, 50);
+    } else if (!isDeleting && j > professions[i].length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1500);
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % professions.length;
+      setTimeout(typeEffect, 300);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
+   <!-- ====== About Me Section ====== -->
+<section id="about" class="bg-black text-white py-20">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left: Profile Image -->
+    <div class="flex justify-center">
+      <div class="relative w-60 h-60 rounded-full overflow-hidden ring-4 ring-yellow-500 ring-offset-4 ring-offset-black">
+        <img src="images/shavai.jpg" alt="" class="object-cover w-full h-full" />
+      </div>
+    </div>
+
+    <!-- Right: About Content -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        About <span class="text-yellow-500">Me</span>
+      </h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        I’m a Defensive Security Researcher and Social Media Recovery Specialist with over five years of hands-on experience 
+        helping individuals, creators, and organizations regain control of their online presence. Since 2020, I have been 
+        working with the Bangladesh Civilian Force as a member, trainer, and leadership contributor, where I’ve successfully 
+        trained more than 1,500 members in security awareness and technical recovery skills.
+      </p>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Alongside my security work, I also serve as a Brand Ambassador for Indian Spice in Ireland, where I support organizational 
+        growth, engagement, and digital branding.
+      </p>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Over the years, I’ve helped recover 600+ hacked & suspended Facebook pages, 100+ compromised YouTube channels, and countless 
+        social media profiles affected by unauthorized access and disabled. I focus on clean, transparent, and efficient recovery—ensuring 
+        clients get back their accounts safely and with confidence.
+      </p>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        My goal is simple:
+to protect people’s digital identities and restore what matters to them.
+      </p>
+
+      <!-- Info Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <p><span class="text-yellow-400 font-semibold">Experience:</span> 5+ Years</p>
+        <p><span class="text-yellow-400 font-semibold">Expertise:</span> Account Recovery, Security & Verification</p>
+        <p><span class="text-yellow-400 font-semibold">Focus:</span> Social Media, Google & YouTube</p>
+        <p><span class="text-yellow-400 font-semibold">Goal:</span> Empowering Digital Safety</p>
+      </div>
+
+      <!-- Skills Progress Bars -->
+      <div class="mt-8 space-y-4">
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span>Social Media Recovery</span>
+            <span>95%</span>
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-2">
+            <div class="bg-yellow-500 h-2 rounded-full" style="width:95%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span>Social Media Brand Protection</span>
+            <span>90%</span>
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-2">
+            <div class="bg-yellow-500 h-2 rounded-full" style="width:90%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1">
+            <span>Technical Problem Solving</span>
+            <span>85%</span>
+          </div>
+          <div class="w-full bg-gray-800 rounded-full h-2">
+            <div class="bg-yellow-500 h-2 rounded-full" style="width:85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-10">
+        <a href="#projects" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+          View My Work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== End About Section ====== -->
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Services</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body { background-color: #000; color: #fff; font-family: 'Poppins', sans-serif; }
+    .service-card {
+      background-color: #111;
+      transition: all 0.3s ease;
+      border-radius: 1rem;
+    }
+    .service-card:hover {
+      background-color: #facc15;
+      color: #000;
+      transform: translateY(-6px);
+    }
+    .icon {
+      color: #facc15;
+      transition: color 0.3s ease;
+    }
+    .service-card:hover .icon {
+      color: #000;
+    }
+  </style>
+
+    </div>
+  </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
+
+<!-- Services Grid (add to your page where you want it) -->
+<section id="services" class="bg-black py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-8 text-center">
+      <h3 class="text-yellow-500 uppercase tracking-wider text-sm font-semibold mb-2">SERVICES</h3>
+      <h2 class="text-3xl md:text-4xl font-bold text-white">What I <span class="text-yellow-500">Offer</span></h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Card: Social Media Account Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <!-- Icon -->
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 11v6m0 0l-2-2m2 2l2-2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Social Media Account Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Recover hacked or lost social media accounts (Facebook, Instagram, Twitter).</p>
+            <button data-service="Social Media Account Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Hacked Page Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3zM5 20h14M7 4h10v3H7z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Hacked Page Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Restore pages that were hacked: content, admin access, and security cleanup.</p>
+            <button data-service="Hacked Page Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: YouTube Channel Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15.5 10.5l-6 3 6 3V10.5zM21 7.5v9a3 3 0 01-3 3H6a3 3 0 01-3-3v-9A3 3 0 016 4.5h12a3 3 0 013 3z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">YouTube Channel Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Help to regain access to hacked or disabled YouTube channels and monetization issues.</p>
+            <button data-service="YouTube Channel Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Google Account Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 11v6m0-6a3 3 0 100-6 3 3 0 000 6zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Google Account Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Recover Gmail, Google Workspace accounts that were hacked or locked.</p>
+            <button data-service="Google Account Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Meta Profile / Account Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 14a3 3 0 100-6 3 3 0 000 6zM4 20v-2a6 6 0 0112 0v2"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Meta Profile / Account Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Recover Facebook/Meta personal accounts, restore access and secure profiles.</p>
+            <button data-service="Meta Profile / Account Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Suspended Page / Profile Recovery -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6M12 9v6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Suspended Page / Profile Recovery</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Appeals and recovery for suspended pages/profiles on social networks and platforms.</p>
+            <button data-service="Suspended Page / Profile Recovery" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Full Account Security Audit (extra) -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 11V7m0 8v-1.5M5 13l2-2m10 2l2-2M7 4h10v4H7z"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Full Account Security Audit</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Post-recovery cleanup: 2FA, permissions, backups, and hardening to prevent re-hacks.</p>
+            <button data-service="Full Account Security Audit" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Custom Recovery / Consultancy (extra) -->
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-lg">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center rounded-lg border border-transparent">
+            <svg class="w-7 h-7 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 7h18M3 12h18M3 17h18"/>
+            </svg>
+          </div>
+
+          <div class="flex-1">
+            <h3 class="text-white font-semibold text-lg">Management / Consultancy</h3>
+            <p class="text-yellow-400 mt-3 text-sm">Driving social media growth with strategy, engagement, branding, and security expertise.</p>
+            <button data-service="Social Media Management / Consultancy" class="mt-5 inline-flex items-center text-yellow-400 hover:text-yellow-300 text-sm service-btn">
+              Learn More →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Simple Modal (place near end of body) -->
+<div id="service-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
+  <div class="bg-gray-900 rounded-2xl max-w-xl w-full p-6 mx-4">
+    <div class="flex justify-between items-start">
+      <h3 id="modal-title" class="text-xl font-semibold text-white"></h3>
+      <button id="modal-close" class="text-yellow-400 text-lg">✕</button>
+    </div>
+    <p id="modal-desc" class="mt-4 text-yellow-200 text-sm"></p>
+    <div class="mt-6 flex justify-end gap-3">
+      <a id="modal-contact" href="#contact" class="px-4 py-2 bg-yellow-500 text-black rounded-md font-medium">Contact Me</a>
+      <button id="modal-close-2" class="px-4 py-2 border border-yellow-500 text-yellow-400 rounded-md">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Minimal JS to open modal and load a sample description -->
+<script>
+  const descriptions = {
+    "Social Media Account Recovery": "Recover hacked or lost social media accounts (Facebook, Instagram, Twitter).",
+    "Hacked Page Recovery": "I restore hacked pages: recover admin roles, Connected Business Portfolio, remove malicious content, and secure the page so it won't be re-hacked.",
+    "YouTube Channel Recovery": "I help regain access to hacked or disabled YouTube channels with primary gmail account",
+    "Google Account Recovery": "Gmail and Google Workspace recovery: account verification and 2FA reset assistance where possible.",
+    "Meta Profile / Account Recovery": "Recover personal Meta accounts and restore access, identity verification and security cleanup.",
+    "Suspended Page / Profile Recovery": "Recover suspended pages/profiles on social platforms with documented evidence and follow-up.",
+    "Full Account Security Audit": "Post-recovery security audit: set up 2FA, review app permissions, change passwords, and add recovery contacts.",
+    "Social Media Management / Consultancy": "I help individuals and businesses grow confidently on social media with strategic content, audience engagement, brand optimization, and security management—delivering clear, data-driven results tailored to your goals."
+  };
+
+  document.querySelectorAll('.service-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=> {
+      const name = btn.getAttribute('data-service');
+      document.getElementById('modal-title').textContent = name;
+      document.getElementById('modal-desc').textContent = descriptions[name] || "Service details coming soon.";
+      document.getElementById('service-modal').classList.remove('hidden');
+      document.getElementById('service-modal').classList.add('flex');
+    });
+  });
+
+  document.getElementById('modal-close').addEventListener('click', ()=> {
+    document.getElementById('service-modal').classList.add('hidden');
+    document.getElementById('service-modal').classList.remove('flex');
+  });
+  document.getElementById('modal-close-2').addEventListener('click', ()=> {
+    document.getElementById('modal-close').click();
+  });
+  // close modal on backdrop click
+  document.getElementById('service-modal').addEventListener('click', (e)=>{
+    if (e.target.id === 'service-modal') document.getElementById('modal-close').click();
+  });
+</script>
+
+<!-- ====== My Recent Work Section ====== -->
+<section id="projects" class="bg-black text-white py-16">
+  <div class="text-center mb-12">
+    <h3 class="text-yellow-500 uppercase tracking-wider text-sm font-semibold mb-2">MY RECENT WORK</h3>
+    <h2 class="text-3xl md:text-4xl font-bold">
+      Have A Look On Some Of My <span class="text-yellow-500">Projects</span>
+    </h2>
+  </div>
+
+  <!-- Project Grid -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+    <!-- Project 1 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/Abu Tohaa Hujur.jpg" alt="Project 1" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 2 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/poster_6.jpg" alt="Project 2" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 3 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/Nasheed Series.jpg" alt="Project 3" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 4 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/poster_2.jpg" alt="Project 4" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 5 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/Imran-Timran-Hacked-Page-Recover.jpg" alt="Project 5" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 6 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/Noor Jewellers BD.jpg" alt="Project 6" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 7 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/math haters.jpg" alt="Project 6" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 8 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/poster_4.jpg" alt="Project 6" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Project 9 -->
+    <div class="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transform transition duration-300">
+      <img src="images/lock account.jpg" alt="Project 6" class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Discover More Button -->
+  <div class="text-center mt-12">
+    <a href="https://www.facebook.com/mohammedshahin.bcf" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300">
+      DISCOVER MORE
+    </a>
+  </div>
+</section>
+<!-- ====== End Projects Section ====== -->
+
+</head>
+<body class="bg-black"></body>
+
+  <!-- Section Start -->
+<section class="services-section">
+  <div class="container">
+    <h2>I Offer Wide Range Of Top Notch <span>Social Media Services</span></h2>
+    <p>Shaping the digital world one post at a time! We provide creative and devoted solutions for growing brands and optimizing experiences. Let us boost your social presence. Together, we’ll turn your presence into performance.</p>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+.services-section {
+  background-color: #0a0a0a; /* dark background for contrast */
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center; /* centers the content horizontally */
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold; /* makes the heading bold */
+}
+
+.services-section h2 span {
+  color: #ffcc00; /* highlight "Social Media Services" */
+  font-weight: bold; /* ensures the span is bold as well */
+}
+
+.services-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto; /* centers the paragraph */
+  line-height: 1.6;
+}
+</style>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Single Card -->
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="headphones" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Technical Support</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="shield" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Security Manager</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="globe" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Online Branding</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="layout-dashboard" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Solutions</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="check-circle" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Verification</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="briefcase" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Social Media Business Consultancy</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="shield-check" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Online Business Safety & Solutions</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+      <div class="service-card p-8 shadow-lg text-left">
+        <i data-lucide="users" class="icon w-8 h-8 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">Influencer Marketing</h3>
+        <a href="#" class="text-sm text-yellow-400 hover:underline">Learn More →</a>
+      </div>
+
+	   </div>
+  </section>
+
+<!-- ===== Contact Section Start ===== -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <p class="section-subtitle">
+      I’m open to collaborations, projects, or social media security consultations. Reach out through any platform below!
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="icon">📍</i>
+        <h4>Address</h4>
+        <p>Sylhet - 3100, Bangladesh</p>
+      </div>
+
+      <div class="contact-card">
+  <i class="icon">📞</i>
+  <h4>Contact Number</h4>
+  <p>
+    <a href="tel:+8801636400127">+8801639-400127</a>
+  </p>
+  <a href="https://wa.me/8801636400127" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+</div>
+
+<!-- WhatsApp Button Styling -->
+<style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  background: #25d366;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+</style>
+
+      <div class="contact-card">
+        <i class="icon">✉️</i>
+        <h4>Email Address</h4>
+        <p><a href="mailto:ahmedshahin71558@gmail.com">ahmedshahin71558@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="contact-action">
+      <h3>Have a Question?</h3>
+      <a href="mailto:ahmedshahin71558@gmail.com" class="btn primary">Click Here</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://facebook.com/mohammedshahin.bcf" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/mohammedshahinofficial/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/shvhai06" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/mohammedshahin-bcf" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/mohammedshahinofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
+<!-- ===== Contact Section End ===== -->
+
+
+<!-- ===== CSS Styling ===== -->
+<style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+.contact {
+  background: radial-gradient(circle at top left, #0b0b0b, #000);
+  color: #fff;
+  padding: 100px 10%;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title span {
+  color: #f9b233;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(249, 178, 51, 0.2);
+  box-shadow: 0 0 15px rgba(249, 178, 51, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: #f9b233;
+  box-shadow: 0 0 25px rgba(249, 178, 51, 0.2);
+}
+
+.contact-card .icon {
+  font-size: 2rem;
+  color: #f9b233;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact-card h4 {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.contact-card p, .contact-card a {
+  color: #ccc;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: #f9b233;
+}
+
+.contact-action {
+  margin-top: 40px;
+}
+
+.contact-action h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.btn.primary {
+  display: inline-block;
+  background: #f9b233;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary:hover {
+  background: #fff;
+  color: #000;
+}
+
+.social-links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #f9b233;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .contact {
+    padding: 80px 5%;
+  }
+}
+</style>
+	
+   <!-- ===== Footer Section Start ===== -->
+<footer class="footer">
+  <p>© 2025 Mohammed Shahin | All Rights Reserved</p>
+</footer>
+<!-- ===== Footer Section End ===== -->
+
+<!-- ===== CSS Styling ===== -->
+<style>
+.footer {
+  background: #0b0b0b;
+  color: #888;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(249, 178, 51, 0.15);
+}
+
+.footer p {
+  margin: 0;
+  color: #aaa;
+  letter-spacing: 0.5px;
+}
+
+.footer p:hover {
+  color: #f9b233;
+  transition: 0.3s ease;
+}
+</style>
